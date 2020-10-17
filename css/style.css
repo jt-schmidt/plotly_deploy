@@ -1,0 +1,23 @@
+.jumbotron {
+    background-image: url("../images/belly_right.jpg");
+    background-size: 100% 100%;
+    text-align: left;
+    /*font-family: "Times New Roman", Times, serif;*/
+    font-family:  "American Typewriter", serif
+  }
+
+  body {
+    background-color: lightgray;
+    /*font-family: "Times New Roman", Times, serif;*/
+    font-family:  "American Typewriter", serif
+  }
+
+  p {
+    /*font-family: "Times New Roman", Times, serif;*/
+    font-size: 30px;
+  }
+
+ html *
+ {
+    font-family:  "American Typewriter", serif !important;
+ }
