@@ -11,6 +11,9 @@ function init() {
   // Use the list of sample names to populate the select options
   //d3.json("samples.json").then((data) => {
     d3.json("https://raw.githubusercontent.com/jt-schmidt/plotly_deploy/main/js/samples.json").then((data) => {
+    console.log("___________________")
+    console.log(data)
+    console.log("______________________")
     var sampleNames = data.names;
 
     sampleNames.forEach((sample) => {
@@ -68,7 +71,7 @@ function buildCharts(sample) {
   // D1.2. Use d3.json to load and retrieve the samples.json file 
   //d3.json("samples.json").then((data) => {
     d3.json("https://raw.githubusercontent.com/jt-schmidt/plotly_deploy/main/js/samples.json").then((data) => {
-      
+
     // D1.3. Create a variable that holds the samples array. 
     var sampleArray = data.samples;
     //console.log(sampleArray);
