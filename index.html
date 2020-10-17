@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plotly_Deploy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style type="text/css" media="print">
+    @page { 
+        size: landscape;
+    }
+    body { 
+        writing-mode: tb-rl;
+    }
+</style>
+  
+  <title>Bellybutton Biodiversity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<h1>Module 12</h1>
 <body>
-    <p>This is the Module 12 challenge.</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button<br>Biodiversity<br>Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+      <div class="col-md-12">
+        <p>
+            <b>This page highlights the variation in belly button bacteria cultures between different individuals with relation to wash frequency per week.</b>
+        </p>
+    </div>   
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- INPUT SELECTOR FOR DATA SET HERE -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+          <!-- BAR CHART HERE -->
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+          <!-- GAUGE CHART HERE -->
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+          <!-- BUBBLE CHART HERE -->
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+  <!-- SCRIPTS and RESOURCE IMPORT -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="js/charts.js"></script>
 </body>
 </html>
